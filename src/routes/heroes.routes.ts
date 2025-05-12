@@ -43,7 +43,7 @@ const heroesRouter = Router();
  * que por sua vez cria o herói e o armazena via HeroRepository.
  */
 
-heroesRouter.post('/', (req, res) => {
+heroesRouter.post('/register', (req, res) => {
   const { name, power } = req.body;
 
   if (!name || !power) {
@@ -68,7 +68,7 @@ heroesRouter.post('/', (req, res) => {
  * que busca os dados no HeroRepository.
  */
 
-heroesRouter.get('/', (req, res) => {
+heroesRouter.get('/get', (req, res) => {
   const heroes = HeroService.listAll();
   return res.json(heroes);
 });

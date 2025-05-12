@@ -1,0 +1,18 @@
+meta {
+  name: Create super hero
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3333/heroes/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name" : "Homem de Ferro",
+    "power" : "Voar"
+  }
+}
