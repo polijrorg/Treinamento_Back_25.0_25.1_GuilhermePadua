@@ -1,0 +1,260 @@
+{
+  "info": {
+    "name": "Piupiewer",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create user",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3333/user/create",
+          "protocol": "http",
+          "host": [
+            "localhost:3333"
+          ],
+          "path": [
+            "user",
+            "create"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\" : \"Guilhed212asrme\",\n  \"email\" : \"gui@sf.csdo\",\n  \"cpf\" : \"213.134.114-13\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "GetAll",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3333/user/getall",
+          "protocol": "http",
+          "host": [
+            "localhost:3333"
+          ],
+          "path": [
+            "user",
+            "getall"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "GetUserById",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3333/user/{{id}}",
+          "protocol": "http",
+          "host": [
+            "localhost:3333"
+          ],
+          "path": [
+            "user",
+            "{{id}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Piu Create",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3333/pius/create",
+          "protocol": "http",
+          "host": [
+            "localhost:3333"
+          ],
+          "path": [
+            "pius",
+            "create"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Piu Delete",
+      "event": [],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3333/pius/{{id}}",
+          "protocol": "http",
+          "host": [
+            "localhost:3333"
+          ],
+          "path": [
+            "pius",
+            "{{id}}"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "Piu GetAll",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3333/pius/getall",
+          "protocol": "http",
+          "host": [
+            "localhost:3333"
+          ],
+          "path": [
+            "pius",
+            "getall"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Piu GetId",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3333/pius/{{id}}",
+          "protocol": "http",
+          "host": [
+            "localhost:3333"
+          ],
+          "path": [
+            "pius",
+            "{{id}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Update User",
+      "event": [],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3333/user/{{id}}",
+          "protocol": "http",
+          "host": [
+            "localhost:3333"
+          ],
+          "path": [
+            "user",
+            "{{id}}"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "id",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}
